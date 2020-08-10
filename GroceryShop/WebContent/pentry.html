@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button ul{
+list-style:none;
+font-size:15px;
+color:white;
+background:transparent;
+width:80px;
+height:20px;
+border-radius:50%;
+top:0;
+border-bottom:4px solid #fff;
+}
+.button ul:hover{
+background-color:maroon;
+}
+h1{
+margin:0;
+padding:0 0 20px;
+color:black;
+text-align:center;
+font-size:50px;
+}
+.form{
+width:370px;
+height:540px;
+background:transparent;
+color:black;
+top:60%;
+left:50%;
+border-radius:10%;
+border-top:1px solid black;
+border-left:10px solid black;
+border-bottom:3px solid black;
+position:absolute;
+transform:translate(-50%,-50%);
+box-sizing:border-box;
+padding:70px 30px;
+}
+.form input[type="text"],input[type="date"],input[type="number"]
+{
+border:none;
+border-bottom: 1px solid #fff;
+background:pink;
+outline:none;
+height:30px;
+font-size:16px;
+}
+.form p{
+margin:0;
+padding:0;
+font-weight:bold;
+}
+.form input{
+top:0;
+width:100%;
+margin-bottom:20px;
+}
+.form input[type="submit"],input[type="reset"]
+{
+border:none;
+outline:none;
+height:40px;
+background:black;
+color:#fff;
+font-size:18px;
+border-radius:50px;
+}
+</style>
+<script>
+window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button ";
+window.onhashchange=function(){window.location.hash="no-back-button";}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body background="images/home4.png">
+<div class="button">
+<ul><li  onclick="location.href='adminoperation.html';">BACK</li></ul>
+</div>
+<h1>fill the product details</h1>
+<div class="form">
+<form action="pentry.jsp" method="get">
+<p>product name</p>
+<input type="text" name="pname" required/>
+<p>brand</p>
+<input type="text" name="brand" required/>
+<p>manufacture date</p>
+<input type="date" name="mdate" required/>
+<p>expire date </p>
+<input type="date" name="edate" required/>
+<p>price</p>
+<input type="number" name="price" min="1" required/>
+<input type="submit" value="submit" />
+<input type="reset" value="reset"/>
+</form>
+</div>
+</body>
+</html>

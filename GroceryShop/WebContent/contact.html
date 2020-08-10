@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+#container ul{
+list-style:none;
+font-size:15px;
+color:white;
+background:transparent;
+width:80px;
+height:20px;
+border-radius:50%;
+top:0;
+border-bottom:4px solid #fff;
+}
+#container ul:hover{
+background-color:maroon;
+}
+
+#about {
+width:370px;
+height:420px;
+background:transparent;
+color:black;
+top:60%;
+left:50%;
+position:absolute;
+transform:translate(-50%,-50%);
+box-sizing:border-box;
+font-weight:bold;
+font-size:20px;
+padding:70px 30px;
+}
+</style>
+<script>
+window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button ";
+window.onhashchange=function(){window.location.hash="no-back-button";}
+</script>
+</head>
+<body background="images/home4.png">
+<div id="container">
+<ul>
+<li onclick="location.href='home.html';">HOME</li>
+</ul>
+</div>
+<div id="about">
+<p>SAMPREETA K BHAT</p>
+<p>SDMIT UJIRE<br>
+fifth semester<br>
+computer science<br>
+phone number:9482335166
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+margin:0px;
+padding:0px;
+}
+
+#container ul{
+list-style:none;
+}
+
+#container ul li{
+background-color:transparent;
+border-bottom: 4px solid black;
+width:180px;
+border-radius:50%;
+height:50px;
+line-height:50px;
+text-align:center;
+float:left;
+color:red;
+font-size:15px;
+position:relative;
+}
+
+#container ul li:hover{
+background-color:maroon;
+}
+
+
+#container ul ul{
+display:none;
+}
+
+#container ul li:hover > ul{
+
+display:block;}
+
+
+.home{
+border-radius:300%;
+border-bottom: 1px solid #fff;
+position:absolute;
+top:0;
+left:40%;
+}
+ .center{
+ position:absolute;
+ top:50%;
+ left:70%;
+ font-size:70px;
+ transform:translate(-70%,-50%);
+ }
+</style>
+
+</head>
+<body background="images/samss.png" >
+<div id="container">
+<form>
+<ul>
+<li onclick="location.href='home.html';">HOME</li>
+<li onclick="location.href='aboutus.html';">ABOUT</li>
+<li>LOGIN
+<ul>
+<li onclick="location.href='adminlogin.html';">ADMIN LOGIN</li>
+<li onclick="location.href='userlogin.html';">CUSTOMER LOGIN</li>
+</ul>
+</li>
+<li onclick="location.href='contact.html';">CONTACT</li>
+</ul>
+</form>
+</div>
+<div class=center><p><b>Online Grocery Shop</b></p></div>
+</body>
+</html>

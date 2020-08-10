@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#c{
+width:370px;
+height:420px;
+background:transparent;
+color:white;
+top:40%;
+left:60%;
+border-radius:10%;
+position:absolute;
+transform:translate(-50%,-50%);
+box-sizing:border-box;
+padding:70px 30px;
+}
+#c input:hover{
+background-color:maroon;
+}
+
+.container{
+position:absolute;
+top:15%;
+left:35%;
+}
+.container input[type="submit"]{
+border:none;
+outline:none;
+height:40px;
+background:transparent;
+color:#fff;
+font-size:18px;
+border-radius:50px;
+border-bottom:2px solid white;
+cursor:pointer;
+}
+.a{
+position:absolute;
+top:35%;
+left:35%;
+}
+.a input[type="submit"]{
+border:none;
+outline:none;
+height:40px;
+background:transparent;
+color:#fff;
+font-size:18px;
+border-radius:50px;
+border-bottom:2px solid white;
+cursor:pointer;
+}
+.b{
+position:absolute;
+top:55%;
+left:35%;
+}
+.b input[type="submit"]{
+border:none;
+outline:none;
+width:80px;
+height:40px;
+background:transparent;
+color:#fff;
+font-size:18px;
+border-radius:50px;
+border-bottom:2px solid white;
+cursor:pointer;
+}
+.e{
+position:absolute;
+top:75%;
+left:35%;
+}
+.e input[type="submit"]{
+border:none;
+outline:none;
+width:120px;
+height:40px;
+background:transparent;
+color:#fff;
+font-size:18px;
+border-radius:50px;
+border-bottom:2px solid white;
+cursor:pointer;
+}
+
+.f{
+position:absolute;
+top:95%;
+left:35%;
+}
+.f input[type="submit"]{
+border:none;
+outline:none;
+width:150px;
+height:40px;
+background:transparent;
+color:#fff;
+font-size:18px;
+border-radius:50px;
+border-bottom:2px solid white;
+cursor:pointer;
+}
+
+</style>
+<script>
+window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button ";
+window.onhashchange=function(){window.location.hash="no-back-button";}
+</script>
+</head>
+<body background="images/g10.png">
+<div id="c">
+<div class="container">
+<input type="submit" value="view products"  onclick="location.href='Userviewp.jsp';"/>
+</div>
+<div class="a">
+<input type="submit" value="search"  onclick="location.href='usersearch.html';"/>
+</div>
+<div class="b">
+<input type="submit" value="order"  onclick="location.href='Orderp.jsp';"/>
+</div>
+<div class="e">
+<input type="submit" value="cancel order"  onclick="location.href='cancelorder.jsp';"/>
+</div>
+<div class="f">
+<input type="submit" value="logout"  onclick="location.href='home.html';"/>
+</div>
+</div>
+</body>
+</html>

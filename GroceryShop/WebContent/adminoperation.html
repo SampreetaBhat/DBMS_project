@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+*{
+margin:0px;
+padding:0px;
+}
+
+.container ul{
+list-style:none;
+}
+
+.container ul li{
+background-color:transparent;
+border-bottom:4px solid white;
+border-radius:50%;
+width:170px;
+height:50px;
+line-height:50px;
+text-align:center;
+float:left;
+color:white;
+font-size:15;
+}
+.container ul li:hover{
+background-color:maroon;
+}
+.container ul ul{
+display:none;
+}
+
+.container ul li:hover > ul{
+
+display:block;}
+
+
+#image{
+width:500px;
+height:420px;
+top:50%;
+left:40%;
+position:absolute;
+text-align:center;
+transform:translate(-50%,-50%);
+box-sizing:border-box;
+padding:70px 30px;
+}
+.h{
+border-bottom: 1px solid #fff;
+position:absolute;
+top:40%;
+left:40%;
+}
+</style>
+<script>
+window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button ";
+window.onhashchange=function(){window.location.hash="no-back-button";}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body background="images/form.png">
+<div class="container">
+<ul>
+<li>OPERATIONS
+<ul>
+<li onclick="location.href='pentry.html';">ADD PRODUCT</li>
+<li onclick="location.href='deletep.jsp';">DELETE PRODUCT</li>
+<li onclick="location.href='search.html';">SEARCH PRODUCT</li>
+<li onclick="location.href='Seeproduct.jsp';">VIEW PRODUCT</li>
+<li onclick="location.href='updatep.jsp';">UPDATE PRODUCT</li>
+</ul>
+</li>
+<li>REPORTS
+<ul>
+<li onclick="location.href='Viewudetails.jsp';">CUSTOMER DETAILS</li>
+<li onclick="location.href='Viewodetails.jsp';">ORDER DETAILS</li>
+</ul>
+</li>
+<li onclick="location.href='home.html';">LOGOUT</li>
+</ul>
+</div>
+<div id="image">
+<img src="images/ad.png" class="h" alt=""/>
+</div>
+</body>
+</html>
